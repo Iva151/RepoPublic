@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    stages {
+        stage('Begin') {
+            steps {
+                echo 'beging..'
+            }
+        }
+        
+        stage('checkout from gitlab') {
+            steps {
+                git branch: 'master',
+                credentialsId: 'MyTokenGithub',
+		        url: 'https://github.com/Iva151/RepoPublic.git'
+            }
+        }
+        
+        stage('Finish') {
+            steps {
+                echo 'Finished..'
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+------- GIT
+
+C:/Users/bc224098/Desktop/Git/autobiografia
+
+https://www.youtube.com/watch?v=Xfu5AadKwSc&list=PLDbrnXa6SAzUyitkL4zcnWO07HxG0BvmS&index=15
+
+---- **** Inicializar la ruta donde se guardaran los componentes en tu pc 
+
+git init
+
+---- *** verificar si hay archivos con modificaciones o nuevos para hacer commit
+
+git status
+
+--- *** agregar el archivo a la rama master
+
+git add autobiografia.txt
+
+
+--- *** hacer commit del archivo con el comentario
+
+git commit -m "Este es un archivo para comenzar con git"
+
+--- *** ver comandos que han sido ejecutados 
+
+git log --oneline
+
+
+---
+
+
+
+--- **** subir al repositorio
+
+git remote
+
+git push -u origin master
+
+--- *** clonar el repositorio a la maquina
+
+git clone https://github.com/Iva151/RepoPublic.git respaldoRepo
+
+--- *** enviar un commit al repositorio remoto
+Git push 
+
+--- *** traer la última versión de una rama determinada.
+
+Git pull 
+
+git pull origin master
+git pull origin desarrollo
+
+--- *** falta el merge
